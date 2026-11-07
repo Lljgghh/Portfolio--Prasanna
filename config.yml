@@ -1,0 +1,26 @@
+backend:
+  name: github
+  repo: Lljgghh/Prasanna-portfolio
+  branch: main
+  # GitHub OAuth server is required. Do not put a GitHub token/client secret here.
+  # Configure a trusted OAuth provider and set base_url/auth_endpoint if required.
+
+site_url: https://YOUR-PORTFOLIO-DOMAIN
+display_url: https://YOUR-PORTFOLIO-DOMAIN
+publish_mode: simple
+media_folder: "Prasanna/uploads"
+public_folder: "/Prasanna/uploads"
+
+collections:
+  - name: website
+    label: Existing portfolio HTML
+    files:
+      - name: homepage
+        label: Prasanna index.html
+        file: Prasanna/index.html
+        fields:
+          - label: Complete HTML source
+            name: body
+            widget: code
+            default_language: html
+            output_code_only: true
